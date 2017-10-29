@@ -1,0 +1,76 @@
+
+<!doctype html>
+<html lang="pt">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="Cleydyr de Albuquerque">
+
+    <title>Classificador de Texto SNCT 2017 Escola Estadual Artur Mendonça</title>
+
+    <!-- Bootstrap core CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb" crossorigin="anonymous">
+
+    <!-- Custom styles for this template -->
+    <link href="https://getbootstrap.com/docs/4.0/examples/narrow-jumbotron/narrow-jumbotron.css" rel="stylesheet">
+  </head>
+
+  <body>
+
+    <div class="container">
+      <header class="header clearfix">
+        <nav>
+          <ul class="nav nav-pills float-right">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Início</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Sobre</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link active" href="/classificar">Classificar</a>
+			</li>
+			<li class="nav-item">
+				<a class="nav-link" href="/treinar">Treinar</a>
+			  </li>
+          </ul>
+        </nav>
+        <h3 class="text-muted">Naive Bayes - SNCT 2017</h3>
+      </header>
+
+      <main role="main">
+
+		<form class="form-horizontal" action="/classificar" method="POST">
+			<fieldset>
+			
+			<!-- Form Name -->
+			<legend>Classificador de texto</legend>
+			
+			<!-- Textarea -->
+			<div class="form-group">
+			  <label class="col-md-12 control-label" for="textarea">Texto para classificar</label>
+			  <div class="col-md-12">                     
+				<textarea class="form-control" id="texto" name="text">Digite ou cole seu texto aqui.</textarea>
+			  </div>
+			</div>
+			
+			<!-- Button -->
+			<div class="form-group">
+			  <label class="col-md-12 control-label" for="submit"></label>
+			  <div class="col-md-12">
+				<input type="submit" />
+			  </div>
+			</div>
+			
+			</fieldset>
+			</form>
+      </main>
+
+      <footer class="footer">
+        <p>&copy; 2017 <a href="https://www.linkedin.com/in/cleydyr/">Cleydyr de Albuquerque</a></p>
+      </footer>
+
+    </div> <!-- /container -->
+  </body>
+</html>

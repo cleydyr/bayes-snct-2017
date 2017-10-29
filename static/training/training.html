@@ -1,0 +1,114 @@
+<!doctype html>
+<html lang="pt">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="description" content="">
+	<meta name="author" content="Cleydyr de Albuquerque">
+
+	<title>Classificador de Texto SNCT 2017 Escola Estadual Artur Mendonça</title>
+
+	<!-- Bootstrap core CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta.2/css/bootstrap.min.css" integrity="sha384-PsH8R72JQ3SOdhVi3uxftmaW6Vc51MKb0q5P2rRUpPvrszuE4W1povHYgTpBfshb"
+	    crossorigin="anonymous">
+
+	<!-- Custom styles for this template -->
+	<link href="https://getbootstrap.com/docs/4.0/examples/narrow-jumbotron/narrow-jumbotron.css" rel="stylesheet">
+</head>
+
+<body>
+
+	<div class="container">
+		<header class="header clearfix">
+			<nav>
+				<ul class="nav nav-pills float-right">
+					<li class="nav-item">
+						<a class="nav-link" href="#">Início</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#">Sobre</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="/classificar">Classificar</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link active" href="/treinar">Treinar</a>
+					</li>
+				</ul>
+			</nav>
+			<h3 class="text-muted">Naive Bayes - SNCT 2017</h3>
+		</header>
+
+
+		<main role="main">
+
+			<form class="form-horizontal" action="/treinar" method="POST">
+				<fieldset>
+
+					<!-- Form Name -->
+					<legend>Classificador de texto</legend>
+
+					<!-- Textarea -->
+					<div class="form-group">
+						<label class="col-md-12 control-label" for="textarea">Texto para classificar</label>
+						<div class="col-md-12">
+							<textarea class="form-control" id="texto" name="text">Digite ou cole seu texto aqui.</textarea>
+						</div>
+					</div>
+
+					<!-- Multiple Radios -->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="sexRadios">Sexo</label>
+						<div class="col-md-4">
+							<div class="radio">
+								<label for="sexRadios-0">
+									<input type="radio" name="sex" id="sexRadios-0" value="m" checked="checked"> Masculino
+								</label>
+							</div>
+							<div class="radio">
+								<label for="sexRadios-1">
+									<input type="radio" name="sex" id="sexRadios-1" value="f"> Feminino
+								</label>
+							</div>
+						</div>
+					</div>
+
+					<!-- Select Basic -->
+					<div class="form-group">
+						<label class="col-md-4 control-label" for="selectHumor">Selecione o humor mais apropriado</label>
+						<div class="col-md-4">
+							<select id="selectHumor" name="humor" class="form-control">
+								<option value="Alegria">Alegria</option>
+								<option value="Desgosto">Desgosto</option>
+								<option value="Medo">Medo</option>
+								<option value="Raiva">Raiva</option>
+								<option value="Surpresa">Surpresa</option>
+								<option value="Tristeza">Tristeza</option>
+							</select>
+						</div>
+					</div>
+
+					<!-- Button -->
+					<div class="form-group">
+						<label class="col-md-12 control-label" for="submit"></label>
+						<div class="col-md-12">
+							<input type="submit" />
+						</div>
+					</div>
+
+				</fieldset>
+			</form>
+		</main>
+
+		<footer class="footer">
+			<p>&copy; 2017
+				<a href="https://www.linkedin.com/in/cleydyr/">Cleydyr de Albuquerque</a>
+			</p>
+		</footer>
+
+	</div>
+	<!-- /container -->
+</body>
+
+</html>

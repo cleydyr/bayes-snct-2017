@@ -1,0 +1,23 @@
+{
+  "name": "bayes-snct-2017",
+  "version": "1.0.0",
+  "description": "Um classificador Naive Bayes para textos em Português que será utilizado numa demonstração na Semana Nacional de Ciência e Tecnologia 2017.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "naive",
+    "bayes",
+    "classifier",
+    "artificial",
+    "intelligence"
+  ],
+  "author": "Cleydyr de Albuquerque",
+  "license": "ISC",
+  "dependencies": {
+    "bayes": "0.0.7",
+    "body-parser": "^1.18.2",
+    "express": "^4.16.2"
+  }
+}
